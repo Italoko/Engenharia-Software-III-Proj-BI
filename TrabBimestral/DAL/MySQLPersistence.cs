@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient; 
 
 
-namespace ecommerce.DAL
+namespace TrabBimestral.DAL
 {
     public class MySQLPersistence
     {
         string _strCon = ""; 
         MySqlConnection _conexao; 
         MySqlCommand _comando; 
-        public int UltimoId { get; set; }
 
         public MySQLPersistence() 
         {
-            _strCon = "Server=den1.mysql4.gear.host;Database=aulalp4;Uid=aulalp4;Pwd=Al59dz6?6v7_;"; 
+            _strCon = "Data Source = den1.mysql4.gear.host; Database = aulalp4; User Id = aulalp4; Password = Al59dz6?6v7_; ; SSL Mode = None";
             _conexao = new MySqlConnection(_strCon);
             _comando = _conexao.CreateCommand(); 
         }
@@ -55,8 +54,6 @@ namespace ecommerce.DAL
                 }
             }
             int linhasAfetadas = _comando.ExecuteNonQuery();
-            if (linhasAfetadas > 0)
-                UltimoId = Convert.ToInt32(_comando.LastInsertedId);
             return linhasAfetadas; 
         }
 
