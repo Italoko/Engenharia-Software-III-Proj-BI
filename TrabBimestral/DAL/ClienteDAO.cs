@@ -49,13 +49,14 @@ namespace TrabBimestral.DAL
             string msg = "";
             try
             {
-                string sql = "update cliente set nome = @nome, cpf = @cpf,email = @email,senha = @senha";
+                string sql = @$"update cliente set nome = @nome, cpf = @cpf,email = @email,senha = @senha where id = @id";
 
                 _bd.LimparParametros();
                 _bd.AdicionarParametro("@nome", cliente.Nome);
                 _bd.AdicionarParametro("@cpf", cliente.Cpf);
                 _bd.AdicionarParametro("@email", cliente.Email);
                 _bd.AdicionarParametro("@senha", cliente.Senha);
+                _bd.AdicionarParametro("@id", cliente.Id);
 
                 _bd.AbrirConexao();
 
