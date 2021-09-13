@@ -54,7 +54,7 @@ namespace TrabBimestral.Control
                 (registros, msg) = cli.Excluir(id);
                 if (registros > 0)
                 {
-                    msg = "Produto excluído com sucesso";
+                    msg = "Cliente excluído com sucesso";
                     sucesso = true;
                 }
             }
@@ -69,7 +69,7 @@ namespace TrabBimestral.Control
             clientes = cli.ObterTodos();
 
             if (clientes.ToList().Count == 0)
-                msg = "Não ha produtos para listar";
+                msg = "Não ha Clientes para listar";
 
             return (clientes, msg);
         }
