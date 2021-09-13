@@ -8,6 +8,16 @@ namespace TrabBimestral.Control
 {
     public class ProdutoControl
     {
+        private static ProdutoControl _instance;
+        private ProdutoControl() { }
+
+        public static ProdutoControl getInstance()
+        {
+            if (_instance == null)
+                _instance = new ProdutoControl();
+            return _instance;
+        }
+
         public (Produto, bool, string) Gravar(int id, string nome, int idCategoria, decimal precoDeVenda, int quantidade)
         {
             bool sucesso = false;
