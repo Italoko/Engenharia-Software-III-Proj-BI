@@ -13,6 +13,7 @@ namespace TrabBimestral.Models
         int _quantidade;
         Categoria _categoria;
         decimal _precoVenda;
+        List<Cliente> _observadores;
 
         public Produto()
         {
@@ -21,6 +22,7 @@ namespace TrabBimestral.Models
             Quantidade = 0;
             PrecoVenda = 0;
             Categoria = new Categoria();
+            Observadores = new List<Cliente>();
         }
 
         public Produto(int id, string nome, int quantidade, Categoria categoria, decimal precoVenda)
@@ -37,6 +39,7 @@ namespace TrabBimestral.Models
         public int Quantidade { get => _quantidade; set => _quantidade = value; }
         public Categoria Categoria { get => _categoria; set => _categoria = value; }
         public decimal PrecoVenda { get => _precoVenda; set => _precoVenda = value; }
+        public List<Cliente> Observadores { get => _observadores; set => _observadores = value; }
 
         public (int,string)Gravar()
         {
