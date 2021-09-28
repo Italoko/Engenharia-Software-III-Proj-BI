@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TrabBimestral.DAL;
+using TrabBimestral.Interface;
 
 namespace TrabBimestral.Models
 {
-    public class Cliente
+    public class Cliente : IObserverProduto
     {
         int _id;
         string _nome;
@@ -69,6 +70,11 @@ namespace TrabBimestral.Models
         {
             ClienteDAO cd = ClienteDAO.getInstance();
             return cd.ObterPorCPF(cpf);
+        }
+
+        public void Update()
+        {
+            Console.WriteLine("Chegou o produto que você aguardava ...");
         }
     }
 }

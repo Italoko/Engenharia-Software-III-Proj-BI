@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TrabBimestral.DAL;
+using TrabBimestral.Interface;
 
 namespace TrabBimestral.Models
 {
-    public class Produto
+    public class Produto : IProduto
     {
         int _id;
         string _nome;
         int _quantidade;
         Categoria _categoria;
         decimal _precoVenda;
-        List<Cliente> _observadores;
+        List<IObserverProduto> _observadores;
 
         public Produto()
         {
@@ -39,7 +40,7 @@ namespace TrabBimestral.Models
         public int Quantidade { get => _quantidade; set => _quantidade = value; }
         public Categoria Categoria { get => _categoria; set => _categoria = value; }
         public decimal PrecoVenda { get => _precoVenda; set => _precoVenda = value; }
-        public List<Cliente> Observadores { get => _observadores; set => _observadores = value; }
+        public List<IObserverProduto> Observadores { get => _observadores; set => _observadores = value; }
 
         public (int,string)Gravar()
         {
@@ -82,6 +83,22 @@ namespace TrabBimestral.Models
             else
                 sucesso = true;
             return (sucesso, msg);
+        }
+
+        public void Add(IObserverProduto observer)
+        {
+            Observadores.Add(observer);
+        }
+
+        public void Remove(IObserverProduto observer)
+        {
+            Observadores.Remove(observer);
+        }
+
+        public void Notify()
+        {
+            foreach (var item in Observadores)
+                item.Update(this); 
         }
     }
 }
