@@ -98,7 +98,7 @@ namespace TrabBimestral.Models
         public void Notify()
         {
             foreach (var item in Observadores)
-                item.Update(this); 
+                item.Update(); 
         }
     }
 }
