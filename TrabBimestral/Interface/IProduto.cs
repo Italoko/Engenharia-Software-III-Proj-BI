@@ -7,8 +7,8 @@ namespace TrabBimestral.Interface
 {
     public interface IProduto
     {
-        void add(IObserverProduto op);
-        void remove(IObserverProduto op);
-        void notify();
+        void Add(IObserverProduto op);
+        void Remove(IObserverProduto op);
+        void Notify();
     }
 }
