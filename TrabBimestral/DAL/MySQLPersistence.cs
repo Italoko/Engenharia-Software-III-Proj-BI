@@ -12,7 +12,8 @@ namespace TrabBimestral.DAL
     {
         string _strCon = ""; 
         MySqlConnection _conexao; 
-        MySqlCommand _comando; 
+        MySqlCommand _comando;
+        public int UltimoId { get; set; }
 
         public MySQLPersistence() 
         {
@@ -54,6 +55,8 @@ namespace TrabBimestral.DAL
                 }
             }
             int linhasAfetadas = _comando.ExecuteNonQuery();
+            if (linhasAfetadas > 0)
+                UltimoId = Convert.ToInt32(_comando.LastInsertedId);
             return linhasAfetadas; 
         }
 
