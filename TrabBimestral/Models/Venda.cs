@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TrabBimestral.DAL;
 
 namespace TrabBimestral.Models
 {
@@ -27,7 +28,7 @@ namespace TrabBimestral.Models
 
         public (int, string) Gravar()
         {
-            //VendaDAO vd = VendaDAO.getInstance();
+            VendaDAO vd = VendaDAO.getInstance();
             int registros;
             string msg;
             return (registros, msg) = vd.Gravar(this);

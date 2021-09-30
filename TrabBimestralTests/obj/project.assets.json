@@ -7048,19 +7048,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\barba\\.nuget\\packages\\": {}
+    "C:\\Users\\ITALO PIOVAN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj",
+      "projectUniqueName": "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj",
       "projectName": "TrabBimestralTests",
-      "projectPath": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj",
-      "packagesPath": "C:\\Users\\barba\\.nuget\\packages\\",
-      "outputPath": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\obj\\",
+      "projectPath": "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj",
+      "packagesPath": "C:\\Users\\ITALO PIOVAN\\.nuget\\packages\\",
+      "outputPath": "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\barba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ITALO PIOVAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7074,8 +7074,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj": {
-              "projectPath": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj"
+            "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj": {
+              "projectPath": "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj"
             }
           }
         }
@@ -7118,11 +7118,14 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   }

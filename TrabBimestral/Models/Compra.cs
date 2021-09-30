@@ -29,7 +29,7 @@ namespace TrabBimestral.Models
 
         public (int, string) Gravar()
         {
-            //CompraDAO cd = CompraDAO.getInstance();
+            CompraDAO cd = CompraDAO.getInstance();
             int registros;
             string msg;
             return (registros, msg) = cd.Gravar(this);
