@@ -360,3 +360,15 @@ I:\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.
 I:\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\ref\TrabBimestral.dll
 I:\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.pdb
 I:\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.genruntimeconfig.cache
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.csproj.AssemblyReference.cache
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.GeneratedMSBuildEditorConfig.editorconfig
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.AssemblyInfoInputs.cache
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.AssemblyInfo.cs
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.csproj.CoreCompileInputs.cache
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.MvcApplicationPartsAssemblyInfo.cs
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.MvcApplicationPartsAssemblyInfo.cache
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.RazorAssemblyInfo.cache
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.RazorAssemblyInfo.cs
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.dll
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\ref\TrabBimestral.dll
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\TrabBimestral.pdb

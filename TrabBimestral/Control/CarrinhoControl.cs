@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TrabBimestral.Models;
 
 namespace TrabBimestral.Control
 {
@@ -18,12 +19,18 @@ namespace TrabBimestral.Control
 
         public double calcularFrete(double total)
         {
-            if(total <= 50)
+            Frete f = new Frete();
+            if (total <= 50)
             {
-                return FreteAControl.Calcular();
+                var frete = new FreteAControl();
+                frete.Calcular(f);
             }
             else
-                return FreteBControl.Calcular();
+            {
+                var frete = new FreteBControl();
+                frete.Calcular(f);
+            }
+            return f.frete;
         }
     }
 }

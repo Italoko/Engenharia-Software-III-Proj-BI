@@ -18,14 +18,14 @@ namespace TrabBimestral.Control
             return _instance;
         }
 
-        public (Fornecedor, bool, string) Gravar(int id, string nome, string cpf, string email, string senha)
+        public (Fornecedor, bool, string) Gravar(int id, string nome, string cnpj)
         {
             bool sucesso = false;
             string msg = "";
             string operacao = "registrado";
             int registros = 0;
 
-            Fornecedor fornecedor = new Fornecedor(id, nome, cpf, email, senha);
+            Fornecedor fornecedor = new Fornecedor(id, nome, cnpj);
             if (fornecedor.Id == 0)
                 (registros, msg) = fornecedor.Gravar();
             else

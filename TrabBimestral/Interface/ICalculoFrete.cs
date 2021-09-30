@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TrabBimestral.Models;
 
 namespace TrabBimestral.Interface
 {
-    interface ICalculoFrete
+    public interface ICalculoFrete
     {
-        static double Calcular();
+        public void Calcular(Frete f);
     }
 }
