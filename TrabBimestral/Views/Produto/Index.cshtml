@@ -1,0 +1,30 @@
+﻿@{
+    TempData["TituloInterno"] = "Cadastro de Produtos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<section>
+    <div class="container">
+        <h3 class="text-center mt-5">Cadastro de Produto</h3>
+        <form>
+            <div class="form-group">
+                <label for="produto">Produto: </label>
+                <input type="text" class="form-control" id="produto" placeholder="Seu produto">
+            </div>
+            <div class="form-group">
+                <label for="valor">Preço: </label>
+                <input type="text" class="form-control" id="valor" placeholder="Preço">
+            </div>
+            <div class="form-group">
+                <label for="valor">Quantidade: </label>
+                <input type="number" class="form-control" id="quantidade" placeholder="Quantidade">
+            </div>
+
+            <div class="text-right">
+                <button type="submit" class="btn btn-style">Cadastrar Produto</button>
+            </div>
+
+        </form>
+    </div>
+</section>

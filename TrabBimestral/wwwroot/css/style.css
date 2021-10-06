@@ -1,0 +1,34 @@
+#cabecalho{
+    background-color: #003265;
+    
+}
+
+.menu{
+    padding: 10px 120px;
+}
+
+.menu-texto{
+    font-weight: 600;
+    color: white !important;
+    text-transform: uppercase;
+}
+
+.btn-style{
+    color: #ffff;
+    background-color: #727787;
+}
+
+.btn:focus{
+    box-shadow: 0 0 0 0.2rem rgb(16 62 111 / 0%);
+}
+
+.bc-tabela{
+    color: #fff;
+    background-color: #3B4856;
+    border-color: #32383e;
+}
+
+.icones-centro{
+    display: block;
+    text-align: center;
+}

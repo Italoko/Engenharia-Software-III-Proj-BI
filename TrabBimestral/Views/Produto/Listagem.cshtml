@@ -1,0 +1,142 @@
+﻿@{
+    TempData["TituloInterno"] = "Listagem de Produtos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<section id="listagem">
+    <div class="container">
+
+        <h3 class="text-center mt-5">Gerenciar</h3>
+
+        <table class="table table-striped mt-5">
+            <thead class="bc-tabela">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Preço</th>
+                    <th scope="col" class="text-center">Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Item 1</td>
+                    <td>3</td>
+                    <td>R$ 42,00</td>
+                    <td class="icones-centro">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#modalEditar"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalExcluir"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Item 2</td>
+                    <td>15</td>
+                    <td>R$ 42,00</td>
+                    <td class="icones-centro">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#modalEditar"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalExcluir"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Item 3</td>
+                    <td>35</td>
+                    <td>R$ 42,00</td>
+                    <td class="icones-centro">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#modalEditar"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalExcluir"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Item 3</td>
+                    <td>35</td>
+                    <td>R$ 42,00</td>
+                    <td class="icones-centro">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#modalEditar"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalExcluir"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Item 3</td>
+                    <td>35</td>
+                    <td>R$ 42,00</td>
+                    <td class="icones-centro">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#modalEditar"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalExcluir"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</section>
+
+<section id="meditar">
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalEditar" tabindex="-1" role="dialog"
+         aria-labelledby="editarModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editarModal">Editar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="produto">Produto: </label>
+                            <input type="text" class="form-control" id="produto" placeholder="Seu produto">
+                        </div>
+                        <div class="form-group">
+                            <label for="valor">Preço: </label>
+                            <input type="text" class="form-control" id="valor" placeholder="Preço">
+                        </div>
+                        <div class="form-group">
+                            <label for="valor">Quantidade: </label>
+                            <input type="number" class="form-control" id="quantidade" placeholder="Quantidade">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar alterações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="mexcluir">
+    <!-- Modal -->
+    <div class="modal fade" id="modalExcluir" tabindex="-1" role="dialog" aria-labelledby="modalExcluir"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Atenção!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Deseja realmente excluir o produto?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Excluir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

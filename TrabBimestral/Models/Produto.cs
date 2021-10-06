@@ -23,7 +23,7 @@ namespace TrabBimestral.Models
             Quantidade = 0;
             PrecoVenda = 0;
             Categoria = new Categoria();
-            Observadores = new List<Cliente>();
+            Observadores = new List<IObserverProduto>();
         }
 
         public Produto(int id, string nome, int quantidade, Categoria categoria, decimal precoVenda)
