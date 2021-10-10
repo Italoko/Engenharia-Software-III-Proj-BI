@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,14 +19,20 @@ namespace TrabBimestral.Control
             return _instance;
         }
 
-        public (Produto, bool, string) Gravar(int id, string nome, int idCategoria, decimal precoDeVenda, int quantidade)
+        
+        [HttpPost]
+        public (Produto, bool, string) Gravar([FromBody] System.Text.Json.JsonElement dados)//(int id, string nome, int idCategoria, decimal precoDeVenda, int quantidade)
         {
             bool sucesso = false;
             string msg = "";
             string operacao = "registrado";
             int registros = 0;
-            Categoria categoria = new Categoria(){Id = idCategoria};
-            Produto produto = new Produto(id, nome, quantidade, categoria, precoDeVenda);
+            Categoria categoria = new Categoria(){Id = Convert.ToInt32(dados.GetProperty("categoriaId").ToString()) };
+            Produto produto = new Produto(
+                Convert.ToInt32(dados.GetProperty("id").ToString()),
+                dados.GetProperty("nome").ToString(),
+                Convert.ToInt32(dados.GetProperty("quantidade").ToString()),
+                categoria, Convert.ToDecimal(dados.GetProperty("precoVenda").ToString()));
 
             (sucesso, msg) = produto.ValidarDados();
             if (sucesso)

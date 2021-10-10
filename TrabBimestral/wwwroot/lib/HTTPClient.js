@@ -1,7 +1,5 @@
 ﻿let HTTPClient = {
-
     get: (url) => {
-
         let config = {
             method: 'get',
             headers: {
@@ -35,7 +33,6 @@
                 "Content-Type": "application/json; charset=utf-8"
             }
         }
-
         return fetch(url, config);
     },
 
@@ -48,10 +45,9 @@
                 "Content-Type": "application/json; charset=utf-8"
             }
         }
-
         return fetch(url, config);
-
     },
+
     postFormData: (url, formData) => {
 
         let config = {
