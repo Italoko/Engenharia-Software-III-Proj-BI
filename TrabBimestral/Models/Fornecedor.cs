@@ -68,7 +68,7 @@ namespace TrabBimestral.Models
 
         public void Update()
         {
-            Console.WriteLine("Preciso do produto x ");
+            Console.WriteLine($"Fornecedor:{Nome} Informado sobre o estoque.");
         }
     }
 }

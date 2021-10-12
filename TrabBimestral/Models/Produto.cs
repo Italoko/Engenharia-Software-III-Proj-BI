@@ -33,6 +33,7 @@ namespace TrabBimestral.Models
             Quantidade = quantidade;
             Categoria = categoria;
             PrecoVenda = precoVenda;
+            Observadores = new List<IObserverProduto>();
         }
 
         public int Id { get => _id; set => _id = value; }
@@ -50,6 +51,7 @@ namespace TrabBimestral.Models
         public (int,string)Atualizar()
         {
             ProdutoDAO pd = ProdutoDAO.getInstance();
+            Notify();
             return (_, _) = pd.Atualizar(this);
         }
 
@@ -71,20 +73,6 @@ namespace TrabBimestral.Models
             return pd.ObterPorId(id);
         }
 
-        public (bool, string) ValidarDados()
-        {
-            bool sucesso = false;
-            string msg = "";
-
-            if (Quantidade < 0)
-                msg = "Quantidade não pode ser negativo";
-            else if (PrecoVenda < 0)
-                msg = "Preço de venda não pode ser negativo";
-            else
-                sucesso = true;
-            return (sucesso, msg);
-        }
-
         public void Add(IObserverProduto observer)
         {
             Observadores.Add(observer);
@@ -97,8 +85,16 @@ namespace TrabBimestral.Models
 
         public void Notify()
         {
-            foreach (var item in Observadores)
-                item.Update(); 
+            if (Quantidade == 0)
+            {
+                foreach (var item in Observadores)
+                    if (Equals(item.GetType(), typeof(Fornecedor)))
+                        item.Update();
+            } 
+            else
+                foreach (var item in Observadores)
+                        if (Equals(item.GetType(), typeof(Cliente)))
+                            item.Update();
         }
     }
 }

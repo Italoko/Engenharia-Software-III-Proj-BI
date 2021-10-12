@@ -2,21 +2,17 @@
 
     produtoId: 0,
 
-    /*init: () => {
-        document.getElementById("selCategoria").innerHTML = "<option>carregando...</option>";
-       document.getElementById("lblImagem").innerHTML = "Selecione uma imagem";
-        document.getElementById("iCarregandoCategoria").classList.remove("d-none");
-        indexProduto.obterCategorias();
-    },*/
-
     enviar: () => {
-
+        if (location.href.toLowerCase() == "http://localhost:64184/Produto/Index".toLowerCase())
+            let fornecedor = document.getElementById("fornecedor").value;
+       
         let dados = {
             id: indexProduto.produtoId,
             nome: document.getElementById("produto").value,
             categoriaId: 1,//document.getElementById("selCategoria").value,
             quantidade: document.getElementById("quantidade").value,
-            valor: document.getElementById("valor").value
+            valor: document.getElementById("valor").value,
+            fornecedor: fornecedor  
         }
 
         if (dados.nome == "")
@@ -31,8 +27,10 @@
             alert("Valor é obrigatório");
         else if (dados.valor < 0)
             alert("Valor não pode ser negativo");
+        else if(dados.fornecedor == "")
+            alert("fornecedor é obrigatório");
         else {
-            HTTPClient.post("/Control/ProdutoControl/Gravar", dados)
+            HTTPClient.post("Produto/Gravar", dados)
                 .then(result => {
                     return result.json();
                 })

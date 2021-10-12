@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -10,8 +9,9 @@ namespace TrabBimestral.Control
     public class ProdutoControl
     {
         private static ProdutoControl _instance;
-        private ProdutoControl() { }
-
+        Produto _produto;
+        private ProdutoControl() { Produto = new Produto();}
+        public Produto Produto { get => _produto; set => _produto = value; }
         public static ProdutoControl getInstance()
         {
             if (_instance == null)
@@ -19,39 +19,38 @@ namespace TrabBimestral.Control
             return _instance;
         }
 
-        
-        [HttpPost]
-        public (Produto, bool, string) Gravar([FromBody] System.Text.Json.JsonElement dados)//(int id, string nome, int idCategoria, decimal precoDeVenda, int quantidade)
+        public (Produto, bool, string) Gravar(System.Text.Json.JsonElement dados)//(int id, string nome, int idCategoria, decimal precoDeVenda, int quantidade)
         {
             bool sucesso = false;
             string msg = "";
             string operacao = "registrado";
             int registros = 0;
+            Fornecedor fornecedor = FornecedorControl.getInstance().ObterPorCNPJ(dados.GetProperty("fornecedor").ToString());
             Categoria categoria = new Categoria(){Id = Convert.ToInt32(dados.GetProperty("categoriaId").ToString()) };
-            Produto produto = new Produto(
-                Convert.ToInt32(dados.GetProperty("id").ToString()),
-                dados.GetProperty("nome").ToString(),
-                Convert.ToInt32(dados.GetProperty("quantidade").ToString()),
-                categoria, Convert.ToDecimal(dados.GetProperty("precoVenda").ToString()));
 
-            (sucesso, msg) = produto.ValidarDados();
-            if (sucesso)
+            Produto.Id = Convert.ToInt32(dados.GetProperty("id").ToString());
+            Produto.Nome = dados.GetProperty("nome").ToString();
+            Produto.Quantidade = Convert.ToInt32(dados.GetProperty("quantidade").ToString());
+            Produto.Categoria = categoria;
+            Produto.PrecoVenda = Convert.ToDecimal(dados.GetProperty("valor").ToString());
+
+            if (Produto.Id == 0)
             {
-                if (produto.Id == 0)
-                    (registros, msg) = produto.Gravar();
-                else
-                {
-                    (registros, msg) = produto.Atualizar();
-                    operacao = "alterado";
-                }
-
-                if (registros > 0)
-                {
-                    sucesso = true;
-                    msg = $"{produto.Nome} {operacao} com sucesso.";
-                }
+               (registros, msg) = Produto.Gravar();
+                Produto.Add(fornecedor);
+            }  
+            else
+            {
+                (registros, msg) = Produto.Atualizar();
+                operacao = "alterado";
             }
-            return (produto, sucesso, msg);
+
+            if (registros > 0)
+            {
+                sucesso = true;
+                msg = $"{Produto.Nome} {operacao} com sucesso.";
+            }
+            return (Produto, sucesso, msg);
         }
 
         public (bool,string) Excluir(int id)

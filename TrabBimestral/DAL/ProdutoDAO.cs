@@ -37,8 +37,8 @@ namespace TrabBimestral.DAL
 
                 _bd.AbrirConexao();
                 linhas = _bd.ExecutarNonQuery(sql);
-                /*if (linhas > 0)
-                    produto.Id = _bd.UltimoId;*/
+                if (linhas > 0)
+                    produto.Id = _bd.UltimoId;
                 _bd.FecharConexao();
             }
             catch (Exception ex)
