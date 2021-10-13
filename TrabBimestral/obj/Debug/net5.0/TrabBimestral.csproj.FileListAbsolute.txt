@@ -1233,3 +1233,5 @@ C:\Users\ImobiBrasil 11\Documents\Trabalho Eng lll\TrabBimestral\obj\Debug\net5.
 C:\Users\ImobiBrasil 11\Documents\Trabalho Eng lll\TrabBimestral\obj\Debug\net5.0\ref\TrabBimestral.dll
 C:\Users\ImobiBrasil 11\Documents\Trabalho Eng lll\TrabBimestral\obj\Debug\net5.0\TrabBimestral.pdb
 C:\Users\ImobiBrasil 11\Documents\Trabalho Eng lll\TrabBimestral\obj\Debug\net5.0\TrabBimestral.genruntimeconfig.cache
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\Razor\Views\Carrinho\Index.cshtml.g.cs
+C:\gitHub\Engenharia-Software-III-Proj-BI\TrabBimestral\obj\Debug\net5.0\Razor\Views\Fornecedor\Index.cshtml.g.cs

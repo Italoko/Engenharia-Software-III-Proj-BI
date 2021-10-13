@@ -7913,19 +7913,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ImobiBrasil 11\\.nuget\\packages\\": {}
+    "C:\\Users\\barba\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ImobiBrasil 11\\Documents\\Trabalho Eng lll\\TrabBimestralTests\\TrabBimestralTests.csproj",
+      "projectUniqueName": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj",
       "projectName": "TrabBimestralTests",
-      "projectPath": "C:\\Users\\ImobiBrasil 11\\Documents\\Trabalho Eng lll\\TrabBimestralTests\\TrabBimestralTests.csproj",
-      "packagesPath": "C:\\Users\\ImobiBrasil 11\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ImobiBrasil 11\\Documents\\Trabalho Eng lll\\TrabBimestralTests\\obj\\",
+      "projectPath": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj",
+      "packagesPath": "C:\\Users\\barba\\.nuget\\packages\\",
+      "outputPath": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ImobiBrasil 11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\barba\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7939,8 +7939,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\ImobiBrasil 11\\Documents\\Trabalho Eng lll\\TrabBimestral\\TrabBimestral.csproj": {
-              "projectPath": "C:\\Users\\ImobiBrasil 11\\Documents\\Trabalho Eng lll\\TrabBimestral\\TrabBimestral.csproj"
+            "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj": {
+              "projectPath": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj"
             }
           }
         }
@@ -7987,7 +7987,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

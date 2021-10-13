@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ImobiBrasil 11\\Documents\\Trabalho Eng lll\\TrabBimestral\\TrabBimestral.csproj": {}
+    "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ImobiBrasil 11\\Documents\\Trabalho Eng lll\\TrabBimestral\\TrabBimestral.csproj": {
+    "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ImobiBrasil 11\\Documents\\Trabalho Eng lll\\TrabBimestral\\TrabBimestral.csproj",
+        "projectUniqueName": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj",
         "projectName": "TrabBimestral",
-        "projectPath": "C:\\Users\\ImobiBrasil 11\\Documents\\Trabalho Eng lll\\TrabBimestral\\TrabBimestral.csproj",
-        "packagesPath": "C:\\Users\\ImobiBrasil 11\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ImobiBrasil 11\\Documents\\Trabalho Eng lll\\TrabBimestral\\obj\\",
+        "projectPath": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj",
+        "packagesPath": "C:\\Users\\barba\\.nuget\\packages\\",
+        "outputPath": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ImobiBrasil 11\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\barba\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
