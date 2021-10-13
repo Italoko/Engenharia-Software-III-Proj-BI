@@ -1,0 +1,25 @@
+﻿@{ TempData["TituloInterno"] = "Pedido para Fornecedor";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+
+
+<section>
+    <div class="container">
+        <h3 class="text-center mt-5">Pedido Fornecedor </h3>
+        <form>
+            <div class="form-group">
+                <label for="produto">Produto: </label>
+                <input type="text" class="form-control" id="produto" placeholder="Produto">
+            </div>
+            <div class="form-group">
+                <label for="valor">Quantidade: </label>
+                <input type="number" class="form-control" id="quantidade" placeholder="Quantidade">
+            </div>
+
+            <div class="text-right">
+                <button type="submit" class="btn btn-style">Finalizar Pedido</button>
+            </div>
+
+        </form>
+    </div>
+</section>
