@@ -7,6 +7,13 @@
 
   <ItemGroup>
     <Content Remove="Views\Carrinho\Ccarrinho.cshtml" />
+    <Content Remove="Views\Contas\contasapagar.cshtml" />
+    <Content Remove="Views\Contas\contasareceber.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Contas\ContasAPagar.cshtml" />
+    <None Include="Views\Contas\ContasAReceber.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
