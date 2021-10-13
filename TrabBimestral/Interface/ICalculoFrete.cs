@@ -8,6 +8,6 @@ namespace TrabBimestral.Interface
 {
     public interface ICalculoFrete
     {
-        public void Calcular(Frete f);
+        public void Calcular(Frete f, double total);
     }
 }

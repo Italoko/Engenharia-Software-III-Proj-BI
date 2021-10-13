@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj": {}
+    "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj": {}
   },
   "projects": {
-    "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj": {
+    "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj",
+        "projectUniqueName": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj",
         "projectName": "TrabBimestralTests",
-        "projectPath": "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj",
-        "packagesPath": "C:\\Users\\ITALO PIOVAN\\.nuget\\packages\\",
-        "outputPath": "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\obj\\",
+        "projectPath": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\TrabBimestralTests.csproj",
+        "packagesPath": "C:\\Users\\barba\\.nuget\\packages\\",
+        "outputPath": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestralTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ITALO PIOVAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\barba\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj": {
-                "projectPath": "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj"
+              "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj": {
+                "projectPath": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj"
               }
             }
           }
@@ -72,28 +72,25 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj": {
+    "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj",
+        "projectUniqueName": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj",
         "projectName": "TrabBimestral",
-        "projectPath": "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj",
-        "packagesPath": "C:\\Users\\ITALO PIOVAN\\.nuget\\packages\\",
-        "outputPath": "I:\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\obj\\",
+        "projectPath": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\TrabBimestral.csproj",
+        "packagesPath": "C:\\Users\\barba\\.nuget\\packages\\",
+        "outputPath": "C:\\gitHub\\Engenharia-Software-III-Proj-BI\\TrabBimestral\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ITALO PIOVAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\barba\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,7 +147,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

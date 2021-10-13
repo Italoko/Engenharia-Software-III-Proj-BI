@@ -20,16 +20,8 @@ namespace TrabBimestral.Control
         public double calcularFrete(double total)
         {
             Frete f = new Frete();
-            if (total <= 50)
-            {
                 var frete = new FreteAControl();
-                frete.Calcular(f);
-            }
-            else
-            {
-                var frete = new FreteBControl();
-                frete.Calcular(f);
-            }
+                frete.Calcular(f, total);
             return f.frete;
         }
     }

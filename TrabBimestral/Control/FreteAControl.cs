@@ -10,9 +10,15 @@ namespace TrabBimestral.Control
     public class FreteAControl : ICalculoFrete
     {
         
-        public void Calcular(Frete f)
+        public void Calcular(Frete f, double total)
         {
-            f.frete = 5;
+            if(total <= 50)
+                f.frete = 5;
+            else
+            {
+                var frete = new FreteBControl();
+                frete.Calcular(f, total);
+            }
         }
     }
 }

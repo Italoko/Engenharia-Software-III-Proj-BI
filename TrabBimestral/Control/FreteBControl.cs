@@ -9,7 +9,7 @@ namespace TrabBimestral.Control
 {
     public class FreteBControl : ICalculoFrete
     {
-        public void Calcular(Frete f)
+        public void Calcular(Frete f, double total)
         {
             f.frete = 15;
         }
